@@ -31,6 +31,7 @@ public class Main {
                 System.out.println("번호 / 작가 / 명언");
                 System.out.println("----------------------");
                 List<Long> keys = new ArrayList<>(map.keySet());
+                Collections.sort();
                 Collections.reverse(keys);
                 for (Long id : keys) {
                     FamousSaying fs = map.get(id);
